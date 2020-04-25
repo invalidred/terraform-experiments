@@ -1,6 +1,6 @@
 resource "aws_key_pair" "example" {
-    key_name = "examplekey"
-    public_key = file("~/.ssh/terraform.pub")
+  key_name   = "examplekey"
+  public_key = file("~/.ssh/terraform.pub")
 }
 
 resource "aws_instance" "provisioner_remote" {
